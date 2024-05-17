@@ -10,86 +10,91 @@
     --color-ground-blue:#343193;
     --color-font-bb:#312D64;
 
-
+    font-size: 10px;
 }
 
 body{
     background: #F9F4FB;
-    width: 43.0rem;
-    height: 160.40rem;
-   
-     
-    
-
-
+ 
 
 }
 
-#astro{
 
-    width: 36.4rem;
+main{
+    margin-inline: center;
+}
+
+.capa {
+    
+    padding: 0 3.2rem 3.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.capa-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+
+#astro {
+    width: 100%;
     height: auto;
-    left: 3.2rem;
-    padding: 0.0rem 3.4rem 1.7rem 3.4rem;
- 
-    margin: 0 3.2rem 1.7rem 3.2rem;
+    margin: 0 auto 1.7rem;
 }
 
 .capa h1{
-  
-    height: auto;
     font-family: "Mulish", sans-serif;
     color: var(--color-base-pink);
     font-weight: 900;
-     text-align: center;
-     font-size: 3.2rem;
-     line-height: auto;
-
-
-
+    font-size: 3.2rem;
 }
-.capa p{
+
+.capa p {
+    flex-direction: column;
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 2.0rem;
     line-height: 2.5rem;
-    text-align: center;
     color: var(--color-font-bb);
-
-
-
 }
 
-div.seta{
-
-    width: 58.5rem;
-    height: 12.0rem;
-    top: 48.1rem;
-    left: 18.6rem;
-    margin: 3.6rem  18.5rem auto 18.5rem ;
-    border-radius: 76.rem;
-   
-
-
-    
+.seta{
+    margin: 3.6rem  auto 0;
+    display: inline-block;
 }
 
 .cards{
     background-color:var(--color-ground-blue);
-    width: 43rem;
-    height: 215.rem;
-    padding: 1.6rem;
+    width: 100%;
+  
+    padding: 5.2rem 3.9rem;
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    justify-content: center;
+    gap: 4.9rem;
+    align-items: stretch;
 }
 
 .card   {
-    width: 100%;
-    height: auto;
-    border-radius: 1.1rem;
-    background: #F9F4FB;
-    padding: 1.6rem;
+    
+    width:auto;
+    
+
+    border-radius: 1.9rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+   
+    gap: 3.3rem;
+
+    padding: 2.6rem;
+  
 }
 
 .textcard {
@@ -104,25 +109,25 @@ div.seta{
     font-family: "Mulish", sans-serif;
     color: var(--color-base-pink);
     font-weight: 900;
+    font-size: 2.9rem;
 }
 
 .textcard p{
     font-family: "Mulish", sans-serif;
-    font-size:1.0rem ;
+    font-size:1.6rem ;
     font-weight: 600;
     color: var(--color-font-bb);
 
 
 }
 
-.card img{
-    margin-bottom: 1.5rem;
-}
+
 
 form{
-    width: 43rem;
+    width: 100%;
     
     height: 56.5rem;
+    padding: 4.0rem ;
 
 
 
@@ -130,10 +135,6 @@ form{
 fieldset{
     border: none;
     
-
-
-
-
     
 }
 
@@ -141,9 +142,9 @@ legend{
     font-family:"Mulish", sans-serif;
     color: var(--color-base-pink);
     font-weight: 900;
-    font-size: 2.5rem;
-    padding: 4.0rem ;
+    font-size: 3.2rem;
     text-align: center;
+    margin-bottom: 2.4rem;
  
 
 
@@ -170,7 +171,7 @@ legend{
     height: 2.4rem;
     position: absolute;
     top: 50%;
-    left: 5.7rem;
+    left: 1.4rem;
     transform:translateY(-50%);
     z-index: 2;
 }
@@ -182,7 +183,7 @@ legend{
     padding-left: 5rem;
     border-radius: 1.6rem;
     border: .1rem solid #312D64;
-    margin:auto 3.9rem auto 4.3rem;
+
 
     
     font-family: "Mulish", sans-serif;
@@ -217,17 +218,19 @@ legend{
    
 }
 
-.input-wrapper-email input {
+.input-wrapper-email textarea {
     position: relative;
     width: 100%;
+    padding: 1.2rem 1.6rem;
     height: 12.6rem;
+
     inset: 0;
-    padding : 0rem auto 1.4rem 0rem;
+  
    
     
     border-radius: 1.6rem;
     border: .1rem solid #312D64;
-    margin:auto 3.9rem auto 4.3rem;
+   
  
 
     
@@ -262,7 +265,7 @@ button{
     flex-direction: column;
     border-radius: 1rem;
     padding: 1.2rem ;
-    margin: 2.4rem 23.6rem 6.5rem 4.3rem;
+   
     border: none;
 
    
@@ -285,14 +288,15 @@ button{
 
 
 footer{
-    background-color:var(--color-ground-blue);  
+    background-color:var(--color-ground-blue); 
+    width: 100%; 
     height: 7.8rem;
-    padding: 1.9rem;
+    padding: 3.2rem 1.6rem;
     flex-direction: column;
     text-align: center;
 
     font-family: "Mulish", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: white
     
         
@@ -302,48 +306,53 @@ footer{
 
 /*@midia queries a partir da aqui versão desktop*/
 
-@media (min-width: 48.125rem){
+@media (min-width: 1024px){
 
+    .capa {
+        flex-direction: row-reverse;
+        text-align: left;
+        align-items:stretch;
+        padding-bottom: 10.3rem;
+        padding-inline: 10.9rem;
+    }
+    
+    .capa > * {
+        flex: 1;
+    }
 
-    #astro{
+    .capa-content {
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 39rem;
+        align-self: flex-end;
+        padding-bottom: 4.5rem;
 
-        width: 71.9rem;
-        height: 73rem;
-        left: 69rem;
-        display: flex;
-        position: relative;
+    }
+
+    #astro {
+        width: auto;
+        max-height: 90vh;
+    }
+
+    .seta {
+        margin: 0;
+        justify-self: flex-end;
+    }
+
+    .cards{
+        flex-direction: row;
      
-     
-      
-    }
-    
-    .capa h1{
-        font-family: "Mulish", sans-serif; 
-        font-size: 5.8rem;
-        font-weight: 900;
-        position: relative;
-        
-        
-    }
-    .capa p{
-        
-        width: 53rem;
-        height: 2.3rem;
-        left: 10.9rem;
-        margin-top: 0rem;
-        
-    }
-    
-    
-        form{
-            background-image: url(./Assets/stars.svg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            
-            
-        }
-    
 
+    }
+    form{
 
-    
+        max-width: 59.2rem;
+        padding-inline: 10.9rem;
+    }
+
+    .contact-form {
+        background-image: url(./Assets/stars.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
 }
