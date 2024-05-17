@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+:root{
+    --color-base-pink:#B52184;
+    --color-ground-blue:#343193;
+    --color-font-bb:#312D64;
+
+
+}
+
+body{
+    background: #F9F4FB;
+    width: 43.0rem;
+    height: 160.40rem;
+   
+     
+    
+
+
+
+}
+
+#astro{
+
+    width: 36.4rem;
+    height: auto;
+    left: 3.2rem;
+    padding: 0.0rem 3.4rem 1.7rem 3.4rem;
+ 
+    margin: 0 3.2rem 1.7rem 3.2rem;
+}
+
+.capa h1{
+  
+    height: auto;
+    font-family: "Mulish", sans-serif;
+    color: var(--color-base-pink);
+    font-weight: 900;
+     text-align: center;
+     font-size: 3.2rem;
+     line-height: auto;
+
+
+
+}
+.capa p{
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--color-font-bb);
+
+
+
+}
+
+div.seta{
+
+    width: 58.5rem;
+    height: 12.0rem;
+    top: 48.1rem;
+    left: 18.6rem;
+    margin: 3.6rem  18.5rem auto 18.5rem ;
+    border-radius: 76.rem;
+   
+
+
+    
+}
+
+.cards{
+    background-color:var(--color-ground-blue);
+    width: 43rem;
+    height: 215.rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.card   {
+    width: 100%;
+    height: auto;
+    border-radius: 1.1rem;
+    background: #F9F4FB;
+    padding: 1.6rem;
+}
+
+.textcard {
+   
+    display: grid;
+    gap: 1.9rem;
+
+
+}
+
+.textcard h1{
+    font-family: "Mulish", sans-serif;
+    color: var(--color-base-pink);
+    font-weight: 900;
+}
+
+.textcard p{
+    font-family: "Mulish", sans-serif;
+    font-size:1.0rem ;
+    font-weight: 600;
+    color: var(--color-font-bb);
+
+
+}
+
+.card img{
+    margin-bottom: 1.5rem;
+}
+
+form{
+    width: 43rem;
+    
+    height: 56.5rem;
+
+
+
+}
+fieldset{
+    border: none;
+    
+
+
+
+
+    
+}
+
+legend{
+    font-family:"Mulish", sans-serif;
+    color: var(--color-base-pink);
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 4.0rem ;
+    text-align: center;
+ 
+
+
+}
+
+.input-wrapper{
+
+    display: flex;
+    position: relative;
+    margin-bottom: 2.4rem;
+
+   
+
+   
+}
+
+
+
+
+
+
+.input-wrapper img{
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 50%;
+    left: 5.7rem;
+    transform:translateY(-50%);
+    z-index: 2;
+}
+.input-wrapper input {
+    position: relative;
+    width: 100%;
+    inset: 0;
+    padding: 1.4rem;
+    padding-left: 5rem;
+    border-radius: 1.6rem;
+    border: .1rem solid #312D64;
+    margin:auto 3.9rem auto 4.3rem;
+
+    
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
+    color: #312D64
+    
+    
+    
+    
+    
+    
+}
+
+.input-wrapper input::placeholder{
+    
+   
+    color:#727180;
+
+
+}
+
+/* input3*/
+
+.input-wrapper-email{
+
+    display: flex;
+    position: relative;
+    margin-bottom: 2.4rem;
+
+   
+
+   
+}
+
+.input-wrapper-email input {
+    position: relative;
+    width: 100%;
+    height: 12.6rem;
+    inset: 0;
+    padding : 0rem auto 1.4rem 0rem;
+   
+    
+    border-radius: 1.6rem;
+    border: .1rem solid #312D64;
+    margin:auto 3.9rem auto 4.3rem;
+ 
+
+    
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
+    color: #312D64
+        
+    
+    
+    
+    
+    
+}
+
+.input-wrapper input::placeholder{
+    
+   
+    color:#727180;
+  
+ 
+
+
+}
+
+
+button{
+    border-radius: 16px;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    height: 4.5rem;
+    width: 15.1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1.2rem ;
+    margin: 2.4rem 23.6rem 6.5rem 4.3rem;
+    border: none;
+
+   
+    font-family:"Mulish", sans-serif;
+ 
+    font-weight: 600;
+    color: white;
+    font-size: 1.4rem;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+    
+   
+
+
+
+
+
+footer{
+    background-color:var(--color-ground-blue);  
+    height: 7.8rem;
+    padding: 1.9rem;
+    flex-direction: column;
+    text-align: center;
+
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
+    color: white
+    
+        
+    
+}
+
+
+/*@midia queries a partir da aqui versão desktop*/
+
+@media (min-width: 48.125rem){
+
+
+    #astro{
+
+        width: 71.9rem;
+        height: 73rem;
+        left: 69rem;
+        display: flex;
+        position: relative;
+     
+     
+      
+    }
+    
+    .capa h1{
+        font-family: "Mulish", sans-serif; 
+        font-size: 5.8rem;
+        font-weight: 900;
+        position: relative;
+        
+        
+    }
+    .capa p{
+        
+        width: 53rem;
+        height: 2.3rem;
+        left: 10.9rem;
+        margin-top: 0rem;
+        
+    }
+    
+    
+        form{
+            background-image: url(./Assets/stars.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+            
+        }
+    
+
+
+    
+}
